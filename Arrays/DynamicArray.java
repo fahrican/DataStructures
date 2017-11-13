@@ -13,6 +13,7 @@ public class DynamicArray {
 		int numberOfQueries = in.nextInt();
 		ArrayList<ArrayList<Integer>> seqList = new ArrayList<ArrayList<Integer>>(numberOfSequences);
 		
+		//initialize the ArrayList objects, to avoid NullPointerException's
 		for (int i = 0; i < numberOfSequences; i++) {
 			seqList.add(new ArrayList<Integer>());
 		}
